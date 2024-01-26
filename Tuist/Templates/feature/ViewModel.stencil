@@ -1,0 +1,24 @@
+//
+//  {{ name }}ViewModel.swift
+//  {{ name }}
+//
+//  Created by {{ author }} on {{ date }}.
+//  Copyright © {{ year }} {{ company }}. All rights reserved.
+//
+
+import Combine
+import Foundation
+
+@MainActor
+public final class {{ name }}ViewModel: ObservableObject {
+  @Published var greetingText: String = ""
+
+  public init() {}
+
+  public func changeGreeting(into value: String) {
+    greetingText = value
+
+    print("Your Greeting Text: \(greetingText)")
+  }
+}
+
